@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVH Vidushan</title>
+    <title>Simple Webpage</title>
+
+    <!-- CSS -->
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            color: blue;
+        }
+
+        table {
+            width: 400px;
+            height: 200px;
+        }
+
+        caption {
+            color: rgb(255, 0, 0);
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        form {
+            padding: 10px;
+            border: 1px solid black;
+            width: 300px;
+
+        }
+
+        #submit {
+            background-color: blue;
+            color: aliceblue;
+            width: 100px;
+            height: 30px;
+
+
+
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            background-image: url('https://shorturl.at/rF3rK');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+
+
 </head>
+
 <body>
-    <h1>A.V.H. Vidushan</h1>
+
+    <h1>Simple Webpage</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea porro incidunt, dolores eos ipsum aliquam
+        consequuntur numquam, consectetur itaque nam optio eligendi quisquam a autem assumenda, ex vero repellat! Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, sint nihil itaque cupiditate, voluptatum expedita
+        iure labore ducimus quia culpa aliquid eos consequatur ipsam nemo consectetur laudantium eius doloremque.
+        Sapiente?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas doloremque consectetur! Sapiente
+        quaerat blanditiis, sed alias quasi nisi enim nostrum laboriosam illum reiciendis exercitationem dolores at
+        similique accusamus porro?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit officiis
+        ratione nam labore consequatur. Doloribus distinctio voluptatem placeat vitae facilis nesciunt ex? Odit iste,
+        impedit nisi repellat rerum possimus!</p>
+
+    <br><br>
+
+    <div>
+
+        <table border="1">
+
+            <caption>Table</caption>
+
+
+
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+            </tr>
+
+            <tr>
+                <td>Hansaka</td>
+                <td>19</td>
+                <td>13</td>
+            </tr>
+
+            <tr>
+                <td>Sathmina</td>
+                <td>16</td>
+                <td>11</td>
+            </tr>
+
+            <tr>
+                <td>Senehas</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Vihanga</td>
+                <td>12</td>
+                <td>7</td>
+            </tr>
+
+
+
+        </table>
+
+    </div>
+
+    <br>
+
+    <h3>Create a form</h3>
+
+    <div>
+
+
+        <form action="" method="get">
+
+            <label for="fname">First Name: &emsp; &emsp;</label>
+            <input type="text" name="fname" id="fname" autofocus required><br><br>
+
+            <label for="lname">Last Name: &emsp; &emsp;</label>
+            <input type="text" name="lname" id="lname" required> <br><br>
+
+            <label for="email">Email: &emsp;&emsp;&emsp; &emsp;</label>
+            <input type="email" name="email" required> <br><br>
+
+            <label for="password">Password:&emsp;&emsp;&emsp;</label>
+            <input type="password" autocomplete="on" required minlength="8" pattern="[A-Za-z0-9]+"><br><br>
+
+            <input id="submit" type="submit">
+
+
+        </form>
+
+    </div>
+
+
+
 </body>
+
 </html>
