@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
+    <title>Hansaka Vidushan</title>
 
     <!-- CSS -->
     <style>
@@ -27,22 +27,17 @@
             color: rgb(255, 0, 0);
             font-size: 30px;
             text-decoration: underline;
+            margin-bottom: 20px;
         }
-
-        form {
-            padding: 10px;
-            border: 1px solid black;
-            width: 300px;
-
-        }
-
         #submit {
             background-color: blue;
             color: aliceblue;
             width: 100px;
             height: 30px;
+        }
 
-
+        fieldset {
+            text-align: center;
 
         }
 
@@ -55,6 +50,12 @@
             background-image: url('https://shorturl.at/rF3rK');
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        #form {
+            color: blue;
+            font-size: 20px;
+
         }
     </style>
 
@@ -84,36 +85,31 @@
 
             <caption>Table</caption>
 
-
-
             <tr>
                 <th>Name</th>
-                <th>Age</th>
-                <th>Class</th>
+                <th>KG</th>
+                <th>Price</th>
             </tr>
 
             <tr>
-                <td>Hansaka</td>
-                <td>19</td>
-                <td>13</td>
+                <td>Cat</td>
+                <td>20</td>
+                <td>$20</td>
             </tr>
 
             <tr>
-                <td>Sathmina</td>
-                <td>16</td>
-                <td>11</td>
+                <td>Dog</td>
+                <td rowspan="2">15</td>
+                <td rowspan="2">$15</td>
             </tr>
 
             <tr>
-                <td>Senehas</td>
-                <td>14</td>
-                <td>10</td>
+                <td>Rat</td>
+
             </tr>
 
             <tr>
-                <td>Vihanga</td>
-                <td>12</td>
-                <td>7</td>
+                <td colspan="3" style="text-align: center;">Total</td>
             </tr>
 
 
@@ -131,24 +127,35 @@
 
         <form action="" method="get">
 
-            <label for="fname">First Name: &emsp; &emsp;</label>
-            <input type="text" name="fname" id="fname" autofocus required><br><br>
+            <fieldset>
+                <legend id="form">Loging Information</legend>
+                <br>
 
-            <label for="lname">Last Name: &emsp; &emsp;</label>
-            <input type="text" name="lname" id="lname" required> <br><br>
 
-            <label for="email">Email: &emsp;&emsp;&emsp; &emsp;</label>
-            <input type="email" name="email" required> <br><br>
+                <label for="fname">First Name: &emsp; &emsp;</label>
+                <input type="text" name="fname" id="fname" autofocus required><br><br>
 
-            <label for="password">Password:&emsp;&emsp;&emsp;</label>
-            <input type="password" autocomplete="on" required minlength="8" pattern="[A-Za-z0-9]+"><br><br>
+                <label for="lname">Last Name: &emsp; &emsp;</label>
+                <input type="text" name="lname" id="lname" required> <br><br>
 
-            <input id="submit" type="submit">
+                <label for="email">Email: &emsp;&emsp;&emsp; &emsp;</label>
+                <input type="email" name="email" required> <br><br>
+
+                <label for="password">Password:&emsp;&emsp;&emsp;</label>
+                <input type="password" autocomplete="on" required minlength="8" pattern="[A-Za-z0-9]+"><br><br>
+
+                <input id="submit" type="submit">
+
+            </fieldset>
 
 
         </form>
 
-    </div>
+    </div><br><br>
+
+
+
+
 
 
 
